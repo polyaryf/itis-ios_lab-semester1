@@ -47,7 +47,7 @@ class PhotoNoteViewController: UIViewController, PHPickerViewControllerDelegate,
             titleTextField.bottomAnchor.constraint(equalTo: imageView.topAnchor, constant: -10),
     
             imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            imageView.widthAnchor.constraint(equalToConstant: 400),
+            imageView.widthAnchor.constraint(equalToConstant: view.frame.width),
             imageView.heightAnchor.constraint(equalToConstant: 450)
         ])
         
