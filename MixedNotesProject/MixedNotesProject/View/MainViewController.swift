@@ -21,7 +21,6 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
          
-//        UserDefaults.standard.set("", forKey: "notes")
         setup()
         setupNavigationBar()
         configureSearchBar()
@@ -182,6 +181,5 @@ extension MainViewController: NotesDelegate {
         let indexPath = indexForNote(id: id, in: notes)
         notes.remove(at: indexPath.row)
         notesTableView.deleteRows(at: [indexPath], with: .automatic)
-       
     }
 }

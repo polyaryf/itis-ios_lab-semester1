@@ -15,7 +15,6 @@ enum NoteServiceError: Error {
     case couldNotCreateImageData
 }
 
-
 class LocalFileManager {
     private let fileManager: FileManager
     private let documentsDirectory: URL

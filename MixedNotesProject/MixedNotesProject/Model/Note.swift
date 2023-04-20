@@ -19,7 +19,7 @@ class Note: Codable {
         
     var descriotion: String {
         if photoName != nil {
-            return "\(lastUpdated.format()) \(photoName ?? "")"
+            return " \(lastUpdated.format()) "
         }
         var lines = text.trimmingCharacters(in: .whitespacesAndNewlines).components(separatedBy: .newlines)
         lines.removeFirst()
